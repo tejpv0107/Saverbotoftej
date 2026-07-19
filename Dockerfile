@@ -18,5 +18,6 @@ WORKDIR /app
 COPY . .
 # change port -p to 10000 if not works
 # A dummy command to keep the container running
-CMD flask run -h 0.0.0.0 -p 8000 & cd /app/Ggn && python3 __main__.py
+CMD flask run -h 0.0.0.0 -p 8000 & PYTHONPATH=/app python3 -m Ggn
+
 
