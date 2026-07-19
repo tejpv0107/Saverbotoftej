@@ -1,4 +1,4 @@
-FROM python:3.10.4-slim-buster
+FROM python:3.10-slim-bookworm
 # Update the package lists and upgrade the existing packages
 RUN apt update && apt upgrade -y
 # Install necessary packages
